@@ -84,7 +84,6 @@ html { overflow-y: scroll; }
         @for $n from 1 through 4{
             @if nth($vals,$n) != n{
                 #{nth($dirs,$n)}:nth($vals,$n);
-
             }
         }
     }
@@ -96,7 +95,6 @@ html { overflow-y: scroll; }
         @for $n from 1 through 4{
             @if nth($vals,$n) != n{
                 #{nth($dirs,$n)}:nth($vals,$n);
-
             }
         }
     }
@@ -108,19 +106,18 @@ html { overflow-y: scroll; }
         @for $n from 1 through 4{
             @if nth($vals,$n) != n{
                 #{nth($dirs,$n)}:nth($vals,$n);
-
             }
         }
     }
 }
 // 定位 end 
 // 居中 start 
-@mixin y-center{
-    margin-left:auto;
+@mixin center{
+    margin-left: auto;
     margin-right: auto;
 }
-%y-center{
-    @include y-center;
+%center{
+    @include center;
 }
 // 居中 end 
 // 上下标 start 
@@ -133,9 +130,3 @@ html { overflow-y: scroll; }
     font-size: $fz;
 }
 // 上下标 end 
-
-
-
-
-
-
